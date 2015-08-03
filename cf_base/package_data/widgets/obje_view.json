@@ -1,0 +1,37 @@
+[
+  {
+    "fields": {
+      "default": "", 
+      "description": "Any type of object.", 
+      "multi": false, 
+      "name": "Object", 
+      "order": 0, 
+      "parameter": false, 
+      "parameter_type": null, 
+      "required": true, 
+      "short_name": "obj", 
+      "uid": "175cd7ae-46dd-471e-9aa2-29105cb077eb", 
+      "variable": "object", 
+      "widget": "9c7ff1bd-6026-4ebd-b44f-ed889a8b0fad"
+    }, 
+    "model": "workflows.abstractinput"
+  }, 
+  {
+    "fields": {
+      "action": "object_viewer", 
+      "category": "ef06ed94-c57a-4bb0-8f05-1212920c95a0", 
+      "description": "Displays any input.", 
+      "has_progress_bar": false, 
+      "interaction_view": "", 
+      "is_streaming": false, 
+      "name": "Object viewer", 
+      "order": 5, 
+      "static_image": "glass_3.png", 
+      "streaming_visualization_view": "", 
+      "uid": "9c7ff1bd-6026-4ebd-b44f-ed889a8b0fad", 
+      "visualization_view": "object_viewer", 
+      "windows_queue": false
+    }, 
+    "model": "workflows.abstractwidget"
+  }
+]

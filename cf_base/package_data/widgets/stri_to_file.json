@@ -1,0 +1,38 @@
+[
+  {
+    "fields": {
+      "default": "", 
+      "description": "", 
+      "multi": false, 
+      "name": "String", 
+      "order": 0, 
+      "parameter": false, 
+      "parameter_type": null, 
+      "required": false, 
+      "short_name": "str", 
+      "uid": "c658923a-a611-414b-ba7e-510aaa83ff19", 
+      "variable": "string", 
+      "widget": "442f5484-494d-4bd7-b1c2-74c1153dd1q6"
+    }, 
+    "model": "workflows.abstractinput"
+  }, 
+  {
+    "fields": {
+      "action": "string_to_file", 
+      "category": "ef06ed94-c57a-4bb0-8f05-1212920c95a0", 
+      "description": "Saves the data provided through the input to a file.", 
+      "has_progress_bar": false, 
+      "interaction_view": "", 
+      "is_streaming": false, 
+      "name": "Save to file", 
+      "order": 4, 
+      "static_image": "1688041475.png", 
+      "streaming_visualization_view": "", 
+      "treeview_image": "treeview/1688041475.png", 
+      "uid": "442f5484-494d-4bd7-b1c2-74c1153dd1q6", 
+      "visualization_view": "string_to_file", 
+      "windows_queue": false
+    }, 
+    "model": "workflows.abstractwidget"
+  }
+]
