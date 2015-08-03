@@ -6,7 +6,7 @@ setup(
     version='0.1',
     include_package_data=True,
     license='MIT License',
-    description='Base package for ClowdFlows',
+    description='Package providing basic widgets for ClowdFlows 2.0',
     
 #    install_requires=[
 #          'pprint',
