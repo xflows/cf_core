@@ -1,6 +1,5 @@
 import sys, pprint
-# from django.shortcuts import render
-# from django.http import Http404, HttpResponse
+from django.shortcuts import render
 
 def object_viewer(request,input_dict,output_dict,widget):
     output_dict = {'object_string':pprint.pformat(input_dict['object'])}
