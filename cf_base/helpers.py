@@ -7,6 +7,10 @@ def ensure_dir(f):
     if not os.path.exists(d):
         os.makedirs(d)
 
+def get_media_root():
+    from mothra.settings import MEDIA_ROOT
+    return MEDIA_ROOT #"/tmp"
+
 class UnpicklableObject:
     """Methods for object deserialization"""
     def __init__(self, init_string):

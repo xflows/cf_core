@@ -16,6 +16,10 @@ def file_to_string(input_dict):
     output_dict['string']=f.read()
     return output_dict
 
+def string_to_file(input_dict):
+    return {}
+
+
 def load_to_string(input_dict):
     '''
     Opens the file and reads its contents into a string.
