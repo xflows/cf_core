@@ -66,3 +66,6 @@ def safe_eval_string(input_dict):
         raise Exception('Invalid string! Please check all quotes, commas, ...')
     else:
         return {'evaluation_result': result}
+
+def object_viewer(input_dict):
+    return {}
