@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+__author__ = 'daleksovski'
+
 import os
 import pysimplesoap
 from pysimplesoap.client import SoapClient

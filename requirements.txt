@@ -1,1 +1,1 @@
-pysimplesoap
+PySimpleSOAP==1.05a

@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+__author__ = 'daleksovski'
+
 def object_viewer(input_dict):
     """ 
     Displays an arbitrary ClowdFlows object

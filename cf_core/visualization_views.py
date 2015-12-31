@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+__author__ = 'daleksovski'
+
 from django.shortcuts import render
 
 def object_viewer(request,input_dict,output_dict,widget):
