@@ -2,15 +2,12 @@ import os
 from setuptools import setup
 
 setup(
-    name='cf_base',
+    name='cf_core',
     version='0.1',
     include_package_data=True,
     license='MIT License',
-    description='Package providing basic widgets for ClowdFlows 2.0',
+    description='Package providing core utilities and widgets for ClowdFlows 2.0',
     
-#    install_requires=[
-#          'pprint',
-#    ],
-    author='',
+    author='daleksovski',
     author_email='',
 )
