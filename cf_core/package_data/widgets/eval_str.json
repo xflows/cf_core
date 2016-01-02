@@ -9,7 +9,7 @@
       "interaction_view": "", 
       "has_progress_bar": false, 
       "image": "", 
-      "description": "Safe evaluation of strings.", 
+      "description": "Safe evaluation of strings using python.",
       "static_image": "", 
       "action": "safe_eval_string",
       "visualization_view": "", 

@@ -2,8 +2,7 @@
   {
     "fields": {
       "default": "", 
-      "description": "Displays the string so that it is readable.", 
-      "multi": false, 
+      "description": "Displays the string provided",
       "name": "String", 
       "order": 0, 
       "parameter": false, 
@@ -20,7 +19,7 @@
     "fields": {
       "action": "display_string", 
       "category": "ef06ed94-c57a-4bb0-8f05-1212920c95a0", 
-      "description": "", 
+      "description": "Displays a string.",
       "has_progress_bar": false, 
       "interaction_view": "", 
       "is_streaming": false, 

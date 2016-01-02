@@ -32,7 +32,7 @@
     "fields": {
       "action": "file_to_string", 
       "category": "ef06ed94-c57a-4bb0-8f05-1212920c95a0", 
-      "description": "", 
+      "description": "Returns the contents of a file as text",
       "has_progress_bar": false, 
       "interaction_view": "", 
       "is_streaming": false, 
