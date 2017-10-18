@@ -1,12 +1,21 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+import os
 
-setup(
+CLASSIFIERS = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research',
+]
+
+dist = setup(
     name='cf_core',
     version='0.1',
-    include_package_data=True,
-    license='MIT License',
+    author='Darko Aleksovski',
     description='Package providing core utilities and widgets for ClowdFlows 2.0',
-    
-    author='daleksovski',
-    author_email='',
+    url='https://github.com/xflows/cf_core',
+    license='MIT License',
+    classifiers=CLASSIFIERS,
+    packages=find_packages(),
+    include_package_data=True,
+    zip_safe=False,
 )
