@@ -48,9 +48,9 @@ class WebService:
         self.wsdl_url = wsdl_url
         self.name = wsdl_url
         self.methods = []
-        for service in self.client.services.values():
-            for port in service['ports'].values():
-                for op in port['operations'].values():
+        for service in list(self.client.services.values()):
+            for port in list(service['ports'].values()):
+                for op in list(port['operations'].values()):
                     method = {}
                     try:
                         method['documentation']=op['documentation']
@@ -60,7 +60,7 @@ class WebService:
                     method['inputs']=[]
                     method['outputs']=[]
                     try:
-                        input_dict = op['input'].values()[0]
+                        input_dict = list(op['input'].values())[0]
                     except:
                         input_dict = []
                     for i in input_dict:
@@ -69,7 +69,7 @@ class WebService:
                         input['type']=input_dict[i]
                         method['inputs'].append(input)
                     try:
-                        output_dict = op['output'].values()[0]
+                        output_dict = list(op['output'].values())[0]
                     except:
                         output_dict = [[]]
                     if type(output_dict)==type([]):
