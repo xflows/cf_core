@@ -1,0 +1,57 @@
+[
+  {
+    "model": "workflows.abstractwidget",
+    "fields": {
+      "interactive": false,
+      "treeview_image": "",
+      "visualization_view": "",
+      "has_progress_bar": false,
+      "category": "ef06ed94-c57a-4bb0-8f05-1212920c95a0",
+      "post_interact_action": "",
+      "interaction_view": "",
+      "description": "Safe evaluation of strings using python.",
+      "order": 1,
+      "wsdl": "",
+      "name": "Evaluate string",
+      "is_streaming": false,
+      "always_save_results": false,
+      "uid": "8c747432-07e8-4b29-a657-9fec2a284791",
+      "streaming_visualization_view": "",
+      "action": "safe_eval_string",
+      "image": "",
+      "static_image": "",
+      "windows_queue": false,
+      "wsdl_method": "",
+      "package": "cf_core"
+    }
+  },
+  {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "widget": "8c747432-07e8-4b29-a657-9fec2a284791",
+      "name": "Input string",
+      "parameter": false,
+      "multi": false,
+      "default": "",
+      "order": 1,
+      "uid": "8436f5de-560f-427d-bb3e-b5e3774b56e7",
+      "variable": "data",
+      "description": "String to evaluate",
+      "required": true,
+      "short_name": "str",
+      "parameter_type": null
+    }
+  },
+  {
+    "model": "workflows.abstractoutput",
+    "fields": {
+      "variable": "evaluation_result",
+      "name": "Object",
+      "description": "Result of evaluation",
+      "uid": "68a67e71-8973-41e8-9f22-991f9f46ff26",
+      "widget": "8c747432-07e8-4b29-a657-9fec2a284791",
+      "order": 1,
+      "short_name": "obj"
+    }
+  }
+]

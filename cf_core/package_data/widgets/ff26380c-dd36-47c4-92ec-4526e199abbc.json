@@ -1,0 +1,57 @@
+[
+  {
+    "model": "workflows.abstractwidget",
+    "fields": {
+      "interactive": false,
+      "treeview_image": "treeview/File.png",
+      "visualization_view": "",
+      "has_progress_bar": false,
+      "category": "ef06ed94-c57a-4bb0-8f05-1212920c95a0",
+      "post_interact_action": "",
+      "interaction_view": "",
+      "description": "Returns the contents of a file as text",
+      "order": 1,
+      "wsdl": "",
+      "name": "File to string",
+      "is_streaming": false,
+      "always_save_results": false,
+      "uid": "ff26380c-dd36-47c4-92ec-4526e199abbc",
+      "streaming_visualization_view": "",
+      "action": "file_to_string",
+      "image": "",
+      "static_image": "File.png",
+      "windows_queue": false,
+      "wsdl_method": "",
+      "package": "cf_core"
+    }
+  },
+  {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "widget": "ff26380c-dd36-47c4-92ec-4526e199abbc",
+      "name": "File",
+      "parameter": false,
+      "multi": false,
+      "default": "",
+      "order": 0,
+      "uid": "81742f96-f3c3-470a-af08-8afc54b6ff30",
+      "variable": "file",
+      "description": "",
+      "required": false,
+      "short_name": "fil",
+      "parameter_type": null
+    }
+  },
+  {
+    "model": "workflows.abstractoutput",
+    "fields": {
+      "variable": "string",
+      "name": "String",
+      "description": "",
+      "uid": "4ca351ce-9b2f-4466-be15-b47f8cc37a84",
+      "widget": "ff26380c-dd36-47c4-92ec-4526e199abbc",
+      "order": 1,
+      "short_name": "str"
+    }
+  }
+]

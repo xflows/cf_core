@@ -1,9 +1,0 @@
-{
-  "model": "workflows.category", 
-  "fields": {
-    "name": "Core",
-    "parent": null,
-    "order": 1, 
-    "uid": "ef06ed94-c57a-4bb0-8f05-1212920c95a0"
-  }
-}

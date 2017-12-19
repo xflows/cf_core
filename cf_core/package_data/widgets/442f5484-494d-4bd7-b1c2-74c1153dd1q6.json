@@ -1,0 +1,45 @@
+[
+  {
+    "model": "workflows.abstractwidget",
+    "fields": {
+      "interactive": false,
+      "treeview_image": "treeview/1688041475.png",
+      "visualization_view": "string_to_file",
+      "has_progress_bar": false,
+      "category": "ef06ed94-c57a-4bb0-8f05-1212920c95a0",
+      "post_interact_action": "",
+      "interaction_view": "",
+      "description": "Saves the data provided through the input to a file.",
+      "order": 4,
+      "wsdl": "",
+      "name": "Save to file",
+      "is_streaming": false,
+      "always_save_results": false,
+      "uid": "442f5484-494d-4bd7-b1c2-74c1153dd1q6",
+      "streaming_visualization_view": "",
+      "action": "string_to_file",
+      "image": "",
+      "static_image": "1688041475.png",
+      "windows_queue": false,
+      "wsdl_method": "",
+      "package": "cf_core"
+    }
+  },
+  {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "widget": "442f5484-494d-4bd7-b1c2-74c1153dd1q6",
+      "name": "String",
+      "parameter": false,
+      "multi": false,
+      "default": "",
+      "order": 0,
+      "uid": "c658923a-a611-414b-ba7e-510aaa83ff19",
+      "variable": "string",
+      "description": "",
+      "required": false,
+      "short_name": "str",
+      "parameter_type": null
+    }
+  }
+]
