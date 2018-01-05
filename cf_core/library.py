@@ -2,11 +2,26 @@
 # -*- coding: utf-8 -*-
 __author__ = 'daleksovski'
 
+
 def core_object_viewer(input_dict):
     """ 
     Displays an arbitrary ClowdFlows object
     """
     return {}
+
+
+def core_add_integers(input_dict):
+    output_dict = {}
+    output_dict['integer'] = int(input_dict['integer1']) + int(input_dict['integer2'])
+    return output_dict
+
+
+def core_add_multiple(input_dict):
+    output_dict = {}
+    output_dict['sum'] = 0
+    for i in input_dict['integer']:
+        output_dict['sum'] = float(i) + output_dict['sum']
+    return output_dict
 
 
 def core_file_to_string(input_dict):
@@ -17,8 +32,9 @@ def core_file_to_string(input_dict):
 
     f = safeOpen(input_dict['file'])
     output_dict = {}
-    output_dict['string']=f.read()
+    output_dict['string'] = f.read()
     return output_dict
+
 
 def core_string_to_file(input_dict):
     return {}
@@ -32,9 +48,10 @@ def core_load_to_string(input_dict):
 
     f = safeOpen(input_dict['file'])
     output_dict = {}
-    output_dict['string']=f.read()
+    output_dict['string'] = f.read()
     return output_dict
-    
+
+
 def core_create_integer(input_dict):
     """ 
     Creates an integer value
@@ -43,17 +60,20 @@ def core_create_integer(input_dict):
     output_dict['integer'] = input_dict['integer']
     return output_dict
 
+
 def core_create_string(input_dict):
     """ 
     Creates a textual value
     """
-    return input_dict  
+    return input_dict
+
 
 def core_display_string(input_dict):
     """ 
     Displays a textual value
     """
     return {}
+
 
 def core_safe_eval_string(input_dict):
     """Safe evaluation of a string as a Python command
@@ -65,11 +85,13 @@ def core_safe_eval_string(input_dict):
     try:
         result = ast.literal_eval(sdata)
     except ValueError:
-        raise Exception('Cannot evaluate string (remember, for safety reasons only literal structures can be evaluated: strings, numbers, tuples, lists, dicts, booleans, and None)')
+        raise Exception(
+            'Cannot evaluate string (remember, for safety reasons only literal structures can be evaluated: strings, numbers, tuples, lists, dicts, booleans, and None)')
     except SyntaxError:
         raise Exception('Invalid string! Please check all quotes, commas, ...')
     else:
         return {'evaluation_result': result}
+
 
 def core_object_viewer(input_dict):
     return {}
@@ -79,21 +101,24 @@ def core_concatenate_lists(input_dict):
     lists = input_dict['lists']
     new_list = []
     for every_list in lists:
-        new_list = new_list+every_list
+        new_list = new_list + every_list
     output_dict = {}
-    output_dict['list']=new_list
+    output_dict['list'] = new_list
     return output_dict
+
 
 def core_merge_dictionaries(input_dict):
     dict1 = input_dict['dict1']
     dict2 = input_dict['dict2']
-    items = list(dict1.items())+list(dict2.items())
+    items = list(dict1.items()) + list(dict2.items())
     output_dict = {}
-    output_dict['dict']=dict(items)
+    output_dict['dict'] = dict(items)
     return output_dict
+
 
 def core_create_list(input_dict):
     return input_dict
+
 
 def core_create_tuple(input_dict):
     lists = input_dict['elements']
@@ -101,33 +126,36 @@ def core_create_tuple(input_dict):
     output_dict['tuple'] = tuple(lists)
     return output_dict
 
+
 def core_create_dictionary(input_dict):
     keys = input_dict['keys']
     values = input_dict['values']
     dic = {}
-    for idx in range(0,min(len(keys),len(values))):
+    for idx in range(0, min(len(keys), len(values))):
         dic[keys[idx]] = values[idx]
     output_dict = {'dict': dic}
     return output_dict
+
 
 def core_create_range(input_dict):
     output_dict = {}
     output_dict['rangeout'] = list(range(int(input_dict['n_range'])))
     return output_dict
 
-def core_delay(input_dict,widget):
-    widget.progress=0
+
+def core_delay(input_dict, widget):
+    widget.progress = 0
     widget.save()
     timeleft = int(input_dict['time'])
     i = 0
     import time
     import math
-    while i<timeleft:
+    while i < timeleft:
         time.sleep(1)
-        i=i+1
-        widget.progress = math.floor(((i*1.0)/timeleft)*100)
+        i = i + 1
+        widget.progress = math.floor(((i * 1.0) / timeleft) * 100)
         widget.save()
-    widget.progress=100
+    widget.progress = 100
     widget.save()
     output_dict = {}
     output_dict['data'] = input_dict['data']
@@ -141,7 +169,7 @@ def core_ensemble(input_dict):
     ens_type = input_dict['ens_type']
     # TODO ens_level = input_dict['ens_level']
     for item in data_inds:
-        #det_by = item['detected_by']
+        # det_by = item['detected_by']
         for i in item['inds']:
             if i not in ens:
                 ens[i] = 1
@@ -155,12 +183,13 @@ def core_ensemble(input_dict):
     print(ens_type)
     if ens_type == "consensus":
         ens_out['inds'] = sorted([x[0] for x in list(ens.items()) if x[1] == n_algs])
-    else: # majority
-        ens_out['inds'] = sorted([x[0] for x in list(ens.items()) if x[1] >= math.floor(n_algs/2+1)])
+    else:  # majority
+        ens_out['inds'] = sorted([x[0] for x in list(ens.items()) if x[1] >= math.floor(n_algs / 2 + 1)])
 
     output_dict = {}
     output_dict['ens_out'] = ens_out
     return output_dict
+
 
 def core_pickle_object(input_dict):
     '''
@@ -171,6 +200,7 @@ def core_pickle_object(input_dict):
     output_dict['pickled_object'] = pkl_obj
     return output_dict
 
+
 def core_unpickle_object(input_dict):
     '''
     Serializes the input object.
@@ -179,6 +209,7 @@ def core_unpickle_object(input_dict):
     output_dict = {}
     output_dict['object'] = obj
     return output_dict
+
 
 def core_stopwatch(input_dict):
     import time
@@ -202,12 +233,15 @@ def core_safe_eval_string(input_dict):
     try:
         result = ast.literal_eval(sdata)
     except ValueError:
-        raise Exception('Cannot evaluate string (remember, for safety reasons only literal structures can be evaluated: strings, numbers, tuples, lists, dicts, booleans, and None)')
+        raise Exception(
+            'Cannot evaluate string (remember, for safety reasons only literal structures can be evaluated: strings, numbers, tuples, lists, dicts, booleans, and None)')
     except SyntaxError:
         raise Exception('Invalid string! Please check all quotes, commas, ...')
     else:
         return {'evaluation_result': result}
-#end
+
+
+# end
 
 
 def core_ravel_list(input_dict):
@@ -218,13 +252,16 @@ def core_ravel_list(input_dict):
             else:
                 if x:
                     ravel(x, result)
-    #end
+
+    # end
 
     ilist = input_dict['input_list']
     result = []
     ravel(ilist, result)
     return {'clean_list': result}
-#end
+
+
+# end
 
 def core_split_documents(input_dict):
     output_dict = {}
@@ -232,10 +269,11 @@ def core_split_documents(input_dict):
     query = input_dict['class']
     new_documents = []
     for doc in documents:
-        if doc.split(' ',1)[0]==input_dict['class']:
-            new_documents.append(doc.split(" ",1)[1])
-    output_dict['string']="\n".join(new_documents)
+        if doc.split(' ', 1)[0] == input_dict['class']:
+            new_documents.append(doc.split(" ", 1)[1])
+    output_dict['string'] = "\n".join(new_documents)
     return output_dict
+
 
 def core_extract_results(input_dict):
     fbeta = 1
@@ -243,13 +281,15 @@ def core_extract_results(input_dict):
     precision = input_dict['precision']
     recall = input_dict['recall']
     auc = input_dict['auc']
-    accuracy = input_dict['accuracy'] * 100 # ViperCharts expects percentages
+    accuracy = input_dict['accuracy'] * 100  # ViperCharts expects percentages
     runtime = input_dict['runtime']
     name = input_dict['name']
-    results = {'fbeta':1,'fscore':fscore,'name': name,'precision': precision,'recall': recall,'auc': auc,'accuracy': accuracy,'runtime': runtime}
+    results = {'fbeta': 1, 'fscore': fscore, 'name': name, 'precision': precision, 'recall': recall, 'auc': auc,
+               'accuracy': accuracy, 'runtime': runtime}
     output_dict = {}
-    output_dict['results']=results
+    output_dict['results'] = results
     return output_dict
+
 
 def core_unzip_list(input_dict):
     '''
@@ -275,6 +315,7 @@ def core_unzip_list(input_dict):
 
     return {'unzipped_list': unzipped_list}
 
+
 def core_average_list(input_dict):
     '''
     Computes the average of the given input list.
@@ -282,14 +323,16 @@ def core_average_list(input_dict):
     input_list = input_dict['input_list']
 
     if input_list:
-        average = sum(input_list)/float(len(input_list))
+        average = sum(input_list) / float(len(input_list))
     else:
         average = None
 
     return {'average': average}
 
+
 def core_js_snippet(input_dict):
     return {'out': None}
+
 
 def core_js_snippet_finished(postdata, input_dict, output_dict):
     try:
