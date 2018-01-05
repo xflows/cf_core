@@ -1,0 +1,9 @@
+{
+  "model": "workflows.category", 
+  "fields": {
+    "name": "Integers", 
+    "parent": "aa3ed779-1e0b-4c6b-883e-24d85b9a6009",
+    "order": 1, 
+    "uid": "9b145e48-9cc0-4a24-9ac7-0df48e879361"
+  }
+}
