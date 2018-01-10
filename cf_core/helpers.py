@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-__author__ = 'daleksovski'
 
 import os
 import pysimplesoap
@@ -10,6 +9,19 @@ def ensure_dir(f):
     d = os.path.dirname(f)
     if not os.path.exists(d):
         os.makedirs(d)
+
+def safeOpen(filename):
+    from django.conf import settings
+
+    if filename.startswith(settings.FILES_FOLDER):
+        if filename.find("..")==-1:
+            return open(filename,'r')
+        else:
+            raise Exception("Invalid filename")
+    else:
+        raise Exception("Invalid filename.")
+
+
 
 def get_media_root():
     from mothra.settings import MEDIA_ROOT

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-__author__ = 'daleksovski'
+
+from cf_core.helpers import safeOpen
 
 def object_viewer(input_dict):
     """ 
@@ -13,7 +14,6 @@ def file_to_string(input_dict):
     """ 
     Reads a file and outputs its textual contents
     """
-    from workflows.security import safeOpen
 
     f = safeOpen(input_dict['file'])
     output_dict = {}
@@ -28,7 +28,6 @@ def load_to_string(input_dict):
     '''
     Opens the file and reads its contents into a string.
     '''
-    from workflows.security import safeOpen
 
     f = safeOpen(input_dict['file'])
     output_dict = {}
