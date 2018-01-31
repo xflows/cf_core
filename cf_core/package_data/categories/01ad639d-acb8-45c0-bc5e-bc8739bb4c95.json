@@ -1,0 +1,9 @@
+{
+  "model": "workflows.category", 
+  "fields": {
+    "name": "Objects", 
+    "parent": "aa3ed779-1e0b-4c6b-883e-24d85b9a6009",
+    "order": 1, 
+    "uid": "01ad639d-acb8-45c0-bc5e-bc8739bb4c95"
+  }
+}

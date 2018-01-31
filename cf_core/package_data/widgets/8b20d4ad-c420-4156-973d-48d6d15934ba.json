@@ -1,0 +1,57 @@
+[
+  {
+    "model": "workflows.abstractwidget",
+    "fields": {
+      "interactive": false,
+      "treeview_image": "treeview/create_integers.png",
+      "visualization_view": "",
+      "has_progress_bar": false,
+      "category": "9b145e48-9cc0-4a24-9ac7-0df48e879361",
+      "post_interact_action": "",
+      "interaction_view": "",
+      "description": "Creates an integer object from a parameter.",
+      "order": 3,
+      "wsdl": "",
+      "name": "Create Integer",
+      "is_streaming": false,
+      "always_save_results": false,
+      "uid": "8b20d4ad-c420-4156-973d-48d6d15934ba",
+      "streaming_visualization_view": "",
+      "action": "core_create_integer",
+      "image": "",
+      "static_image": "create_integers.png",
+      "windows_queue": false,
+      "wsdl_method": "",
+      "package": "cf_core"
+    }
+  },
+  {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "widget": "8b20d4ad-c420-4156-973d-48d6d15934ba",
+      "name": "Type your integer",
+      "parameter": true,
+      "multi": false,
+      "default": "",
+      "order": 0,
+      "uid": "1e52e44e-94cc-4666-8278-04da49d8f890",
+      "variable": "integer",
+      "description": "",
+      "required": true,
+      "short_name": "int",
+      "parameter_type": "text"
+    }
+  },
+  {
+    "model": "workflows.abstractoutput",
+    "fields": {
+      "variable": "integer",
+      "name": "Integer",
+      "description": "The returned integer.",
+      "uid": "68ec6254-d17a-4867-b57c-6f95f7a72527",
+      "widget": "8b20d4ad-c420-4156-973d-48d6d15934ba",
+      "order": 1,
+      "short_name": "int"
+    }
+  }
+]

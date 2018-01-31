@@ -1,0 +1,57 @@
+[
+  {
+    "model": "workflows.abstractwidget",
+    "fields": {
+      "interactive": false,
+      "treeview_image": "treeview/string.png",
+      "visualization_view": "",
+      "has_progress_bar": false,
+      "category": "11865b03-cb06-4d50-9174-69d920cbe4ec",
+      "post_interact_action": "",
+      "interaction_view": "",
+      "description": "Creates a string",
+      "order": 2,
+      "wsdl": "",
+      "name": "Create String",
+      "is_streaming": false,
+      "always_save_results": false,
+      "uid": "1b38bbab-7f89-4469-94cd-2f481f9c61f7",
+      "streaming_visualization_view": "",
+      "action": "core_create_string",
+      "image": "",
+      "static_image": "string.png",
+      "windows_queue": false,
+      "wsdl_method": "",
+      "package": "cf_core"
+    }
+  },
+  {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "widget": "1b38bbab-7f89-4469-94cd-2f481f9c61f7",
+      "name": "String",
+      "parameter": true,
+      "multi": false,
+      "default": "",
+      "order": 0,
+      "uid": "0f6fa6df-b8d1-4e12-a9ac-427233bb090a",
+      "variable": "string",
+      "description": "",
+      "required": false,
+      "short_name": "str",
+      "parameter_type": "textarea"
+    }
+  },
+  {
+    "model": "workflows.abstractoutput",
+    "fields": {
+      "variable": "string",
+      "name": "String",
+      "description": "",
+      "uid": "c5b4663c-778a-4573-a0e1-bf321831f75d",
+      "widget": "1b38bbab-7f89-4469-94cd-2f481f9c61f7",
+      "order": 1,
+      "short_name": "str"
+    }
+  }
+]

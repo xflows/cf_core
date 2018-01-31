@@ -1,0 +1,45 @@
+[
+  {
+    "model": "workflows.abstractwidget",
+    "fields": {
+      "interactive": false,
+      "treeview_image": "",
+      "visualization_view": "object_viewer",
+      "has_progress_bar": false,
+      "category": "01ad639d-acb8-45c0-bc5e-bc8739bb4c95",
+      "post_interact_action": "",
+      "interaction_view": "",
+      "description": "Displays any input.",
+      "order": 5,
+      "wsdl": "",
+      "name": "Object viewer",
+      "is_streaming": false,
+      "always_save_results": false,
+      "uid": "9c7ff1bd-6026-4ebd-b44f-ed889a8b0fad",
+      "streaming_visualization_view": "",
+      "action": "core_object_viewer",
+      "image": "",
+      "static_image": "glass_3.png",
+      "windows_queue": false,
+      "wsdl_method": "",
+      "package": "cf_core"
+    }
+  },
+  {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "widget": "9c7ff1bd-6026-4ebd-b44f-ed889a8b0fad",
+      "name": "Object",
+      "parameter": false,
+      "multi": false,
+      "default": "",
+      "order": 0,
+      "uid": "175cd7ae-46dd-471e-9aa2-29105cb077eb",
+      "variable": "object",
+      "description": "Any type of object.",
+      "required": true,
+      "short_name": "obj",
+      "parameter_type": null
+    }
+  }
+]
