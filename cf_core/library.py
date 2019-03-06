@@ -40,6 +40,10 @@ def core_string_to_file(input_dict):
     return {}
 
 
+def core_load_file(input_dict):
+    return input_dict
+
+
 def core_load_to_string(input_dict):
     '''
     Opens the file and reads its contents into a string.
