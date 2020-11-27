@@ -60,6 +60,23 @@
     }
   },
   {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "name": "Label",
+      "short_name": "lab",
+      "description": "Only keep data with this label",
+      "variable": "label",
+      "widget": "6da80fe6-59c8-43b9-aaa9-c4168fc5dba9",
+      "required": false,
+      "parameter": true,
+      "multi": false,
+      "default": "",
+      "parameter_type": null,
+      "order": 1,
+      "uid": "6693e216-30cd-4579-9cc7-11f482e3e644"
+    }
+  },
+  {
     "model": "workflows.abstractoutput",
     "fields": {
       "name": "Data",
