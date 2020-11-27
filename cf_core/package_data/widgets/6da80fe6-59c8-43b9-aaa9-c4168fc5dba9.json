@@ -71,7 +71,7 @@
       "parameter": true,
       "multi": false,
       "default": "",
-      "parameter_type": null,
+      "parameter_type": "text",
       "order": 1,
       "uid": "6693e216-30cd-4579-9cc7-11f482e3e644"
     }
