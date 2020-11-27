@@ -1,0 +1,74 @@
+[
+  {
+    "model": "workflows.abstractwidget",
+    "fields": {
+      "name": "Filter data by label",
+      "action": "core_filter_data_by_label",
+      "wsdl": "",
+      "wsdl_method": "",
+      "description": "",
+      "category": "01ad639d-acb8-45c0-bc5e-bc8739bb4c95",
+      "visualization_view": "",
+      "streaming_visualization_view": "",
+      "interactive": false,
+      "interaction_view": "",
+      "post_interact_action": "",
+      "image": "",
+      "treeview_image": "",
+      "static_image": "",
+      "has_progress_bar": false,
+      "is_streaming": false,
+      "order": 1,
+      "uid": "6da80fe6-59c8-43b9-aaa9-c4168fc5dba9",
+      "package": "cf_core",
+      "always_save_results": false,
+      "windows_queue": false
+    }
+  },
+  {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "name": "Labels",
+      "short_name": "lab",
+      "description": "",
+      "variable": "labels",
+      "widget": "6da80fe6-59c8-43b9-aaa9-c4168fc5dba9",
+      "required": false,
+      "parameter": false,
+      "multi": false,
+      "default": "",
+      "parameter_type": null,
+      "order": 1,
+      "uid": "1c7cd369-b8b7-4a65-a6ad-9436b6fb42a0"
+    }
+  },
+  {
+    "model": "workflows.abstractinput",
+    "fields": {
+      "name": "Data",
+      "short_name": "dat",
+      "description": "",
+      "variable": "data",
+      "widget": "6da80fe6-59c8-43b9-aaa9-c4168fc5dba9",
+      "required": false,
+      "parameter": false,
+      "multi": false,
+      "default": "",
+      "parameter_type": null,
+      "order": 1,
+      "uid": "2743f1ee-15f3-46a6-9424-59a9c2ae79c0"
+    }
+  },
+  {
+    "model": "workflows.abstractoutput",
+    "fields": {
+      "name": "Data",
+      "short_name": "dat",
+      "description": "",
+      "variable": "data",
+      "widget": "6da80fe6-59c8-43b9-aaa9-c4168fc5dba9",
+      "order": 1,
+      "uid": "cf7a6920-3bc5-41e5-a0d4-6c019c192574"
+    }
+  }
+]

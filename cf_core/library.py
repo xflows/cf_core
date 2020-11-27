@@ -4,6 +4,18 @@
 from cf_core.helpers import safeOpen
 
 
+def core_join_list(input_dict):
+    return {
+        'string': " ".join([str(x) for x in input_dict['list']])
+    }
+
+
+def core_filter_data_by_label(input_dict):
+    data = zip(input_dict['data'], input_dict['labels'])
+    return {
+        'data': [x[0] for x in data if x[1] == input_dict['label']]
+    }
+
 def core_object_viewer(input_dict):
     """ 
     Displays an arbitrary ClowdFlows object
