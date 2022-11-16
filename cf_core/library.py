@@ -356,3 +356,10 @@ def core_js_snippet_finished(postdata, input_dict, output_dict):
     except:
         raise Exception("Problem de-serializing the output.")
     return {'out': out}
+
+
+def core_concatenate_strings(input_dict):
+    sep = input_dict.get('delimiter', '')
+    return {'string': sep.join(input_dict['strings'])}
+
+    return input_dict

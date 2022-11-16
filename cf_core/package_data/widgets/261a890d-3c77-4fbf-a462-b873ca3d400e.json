@@ -6,7 +6,7 @@
       "action": "core_split_documents",
       "wsdl": "",
       "wsdl_method": "",
-      "description": "",
+      "description": "This widget takes a string representing a file in labeled line document format, and returns only those documents for which the class is equal to the given label.",
       "category": "11865b03-cb06-4d50-9174-69d920cbe4ec",
       "visualization_view": "",
       "streaming_visualization_view": "",
@@ -30,7 +30,7 @@
     "fields": {
       "name": "String",
       "short_name": "str",
-      "description": "",
+      "description": "A string containing data in labeled line document format",
       "variable": "string",
       "widget": "261a890d-3c77-4fbf-a462-b873ca3d400e",
       "required": false,

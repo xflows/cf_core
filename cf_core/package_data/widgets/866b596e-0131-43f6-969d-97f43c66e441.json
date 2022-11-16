@@ -2,56 +2,56 @@
   {
     "model": "workflows.abstractwidget",
     "fields": {
-      "interactive": false,
-      "treeview_image": "treeview/Upload-icon_1.png",
-      "visualization_view": "",
-      "has_progress_bar": false,
-      "category": "bbf1e628-8be6-4178-8d93-765de278c0e4",
-      "post_interact_action": "",
-      "interaction_view": "",
-      "description": "",
-      "order": 3,
-      "wsdl": "",
       "name": "Load file to string",
-      "is_streaming": false,
-      "always_save_results": true,
-      "uid": "866b596e-0131-43f6-969d-97f43c66e441",
-      "streaming_visualization_view": "",
       "action": "core_load_to_string",
-      "image": "",
-      "static_image": "Upload-icon_1.png",
-      "windows_queue": false,
+      "wsdl": "",
       "wsdl_method": "",
-      "package": "cf_core"
+      "description": "This widgets reads a file into a string.",
+      "category": "bbf1e628-8be6-4178-8d93-765de278c0e4",
+      "visualization_view": "",
+      "streaming_visualization_view": "",
+      "interactive": false,
+      "interaction_view": "",
+      "post_interact_action": "",
+      "image": "",
+      "treeview_image": "treeview/Upload-icon_1.png",
+      "static_image": "Upload-icon_1.png",
+      "has_progress_bar": false,
+      "is_streaming": false,
+      "order": 3,
+      "uid": "866b596e-0131-43f6-969d-97f43c66e441",
+      "package": "cf_core",
+      "always_save_results": true,
+      "windows_queue": false
     }
   },
   {
     "model": "workflows.abstractinput",
     "fields": {
-      "widget": "866b596e-0131-43f6-969d-97f43c66e441",
       "name": "file",
+      "short_name": "fil",
+      "description": "",
+      "variable": "file",
+      "widget": "866b596e-0131-43f6-969d-97f43c66e441",
+      "required": true,
       "parameter": true,
       "multi": false,
       "default": "",
+      "parameter_type": "file",
       "order": 0,
-      "uid": "2de6ce93-0063-4770-a1d1-93fc2d98bccc",
-      "variable": "file",
-      "description": "",
-      "required": true,
-      "short_name": "fil",
-      "parameter_type": "file"
+      "uid": "2de6ce93-0063-4770-a1d1-93fc2d98bccc"
     }
   },
   {
     "model": "workflows.abstractoutput",
     "fields": {
-      "variable": "string",
       "name": "string",
+      "short_name": "str",
       "description": "",
-      "uid": "9051dbca-57cb-4d2b-98e1-14e5b2ea3375",
+      "variable": "string",
       "widget": "866b596e-0131-43f6-969d-97f43c66e441",
       "order": 1,
-      "short_name": "str"
+      "uid": "9051dbca-57cb-4d2b-98e1-14e5b2ea3375"
     }
   }
 ]

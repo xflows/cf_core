@@ -6,7 +6,7 @@
       "action": "core_filter_data_by_label",
       "wsdl": "",
       "wsdl_method": "",
-      "description": "",
+      "description": "This widget selects those data objects from the list for which the corresponding label from the list of labels has the selected value.",
       "category": "01ad639d-acb8-45c0-bc5e-bc8739bb4c95",
       "visualization_view": "",
       "streaming_visualization_view": "",

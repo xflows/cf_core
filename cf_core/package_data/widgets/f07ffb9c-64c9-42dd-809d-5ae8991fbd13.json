@@ -6,7 +6,7 @@
       "action": "core_js_snippet",
       "wsdl": "",
       "wsdl_method": "",
-      "description": "",
+      "description": "This widget allows to access input objects using the inputs array and assigns the result to the output variable. This is useful for manipulating simple objects, such as lists, strings and dictionaries.",
       "category": "01ad639d-acb8-45c0-bc5e-bc8739bb4c95",
       "visualization_view": "",
       "streaming_visualization_view": "",

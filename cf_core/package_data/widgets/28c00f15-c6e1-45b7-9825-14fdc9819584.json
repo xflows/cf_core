@@ -6,7 +6,7 @@
       "action": "core_concatenate_strings",
       "wsdl": "",
       "wsdl_method": "",
-      "description": "",
+      "description": "This widget concatenates input strings using a given delimiter.",
       "category": "11865b03-cb06-4d50-9174-69d920cbe4ec",
       "visualization_view": "",
       "streaming_visualization_view": "",
